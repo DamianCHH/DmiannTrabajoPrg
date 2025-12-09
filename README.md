@@ -1,17 +1,19 @@
+# Diagrama de Flujo del Programa
+
+```mermaid
 flowchart TD
-    A([Inicio]) --> B[Importar módulo random]
-    B --> C[Mostrar "**** Generador de contraseñas *******"]
-    C --> D[Mostrar "*******************"]
-    D --> E[Pedir al usuario tam = cantidad de caracteres]
-    E --> F[Definir cadena de caracteres permitidos]
-    F --> G[Inicializar contrasena = ""]
-    G --> H[Iniciar bucle for i en range(tam)]
-    H --> I[Generar numero aleatorio = random.randint(0, len(caracteres) - 1)]
-    I --> J[Obtener caracteres[numero]]
-    J --> K[Agregar carácter a contrasena]
-    K --> L{¿i < tam-1?}
-    L -->|Sí| H
-    L -->|No| M[Mostrar "La contraseña segura es:"]
-    M --> N[Mostrar valor de contrasena]
-    N --> O[Mostrar "Guárdala en un lugar seguro"]
-    O --> P([Fin])
+    A([Inicio]) --> B[Importar modulo random]
+    B --> C[Mostrar mensaje de titulo]
+    C --> D[Pedir al usuario tam = numero de caracteres]
+    D --> E[Definir cadena de caracteres permitidos]
+    E --> F[Inicializar contrasena como cadena vacia]
+    F --> G[Iniciar bucle for i en range(tam)]
+    G --> H[Generar numero aleatorio entre 0 y longitud de caracteres - 1]
+    H --> I[Obtener caracter usando caracteres[numero]]
+    I --> J[Agregar caracter a la cadena contrasena]
+    J --> K{Quedan iteraciones en el bucle?}
+    K -->|Si| G
+    K -->|No| L[Mostrar mensaje: La contraseña segura es]
+    L --> M[Mostrar valor de contrasena]
+    M --> N[Mostrar mensaje: Guardala en un lugar seguro]
+    N --> O([Fin])
