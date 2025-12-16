@@ -1,7 +1,21 @@
 import random
 
 print("** Generador de contraseñas ***")
-print("*******")
+print("*******************************")
+print("///////////////////////////////")
+# -------------------------------
+# Definiendo una funcion para generar una contraseña
+# -------------------------------
+def generar_contrasena(tamano, caracteres):
+    
+    contrasena = ""
+
+    for i in range(tamano):
+        numero = random.randint(0, len(caracteres) - 1)
+        contrasena = contrasena + caracteres[numero]
+
+    return contrasena
+
 
 # Validamos que el usuario ingrese un número correcto
 tam = 0
@@ -11,7 +25,7 @@ while tam <= 0:
     except:
         print("Debes ingresar un número válido.")
 
-# Preguntamos si quiere generar más de una contraseña
+# Preguntamos cuántas contraseñas desea generar
 cantidad = 1
 try:
     cantidad = int(input("¿Cuántas contraseñas deseas generar? (mínimo 1): "))
@@ -20,21 +34,17 @@ try:
 except:
     cantidad = 1
 
-# Caracteres permitidos
-caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*-+,.;:?"
+
+
+# Generamos una Tupla
+
+caracteres = ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*-+,.;:?")
 
 print("\nGenerando contraseña(s)...\n")
 
-# Usamos un for para generar varias contraseñas sin cambiar la lógica original
+# Generamos las contraseñas usando la función
 for j in range(cantidad):
-
-    contrasena = ""  # contraseña vacía por cada ciclo
-
-    # Generamos carácter por carácter (tu misma esencia)
-    for i in range(tam):
-        numero = random.randint(0, len(caracteres) - 1)
-        contrasena = contrasena + caracteres[numero]
-
+    contrasena = generar_contrasena(tam, caracteres)
     print(f"Contraseña #{j+1}: {contrasena}")
 
 print("\nGuárdala(s) en un lugar seguro.")
