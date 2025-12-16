@@ -1,6 +1,6 @@
-# 🔐 Generador de Contraseñas en Python
+# Generador de Contraseñas en Python
 
-## 📌 Descripción del Proyecto
+## Descripción del Proyecto
 Este proyecto consiste en un **generador de contraseñas seguras** desarrollado en el lenguaje de programación **Python**.  
 El programa permite al usuario generar una o varias contraseñas de manera aleatoria, seleccionando la longitud deseada y utilizando una combinación de letras, números y caracteres especiales.
 
@@ -8,7 +8,7 @@ Este trabajo integra los conocimientos adquiridos durante las **8 semanas del cu
 
 ---
 
-## 🎯 Objetivo del Programa
+## Objetivo del Programa
 El objetivo principal del programa es:
 
 - Generar contraseñas seguras de forma automática.
@@ -20,33 +20,33 @@ El objetivo principal del programa es:
 
 ---
 
-## ⚙️ Funcionalidades Principales
+## Funcionalidades Principales
 
-### 1️⃣ Generación de contraseñas aleatorias
+### Generación de contraseñas aleatorias
 El programa genera contraseñas utilizando caracteres aleatorios seleccionados desde una tupla que contiene:
 - Letras mayúsculas
 - Letras minúsculas
 - Números
 - Caracteres especiales
 
-### 2️⃣ Uso de funciones
+###  Uso de funciones
 Se implementa la función `generar_contrasena(tamano, caracteres)` que:
 - Recibe el tamaño de la contraseña.
 - Recibe la tupla de caracteres.
 - Devuelve una contraseña generada de forma aleatoria.
 
-### 3️⃣ Validación de entradas
+### Validación de entradas
 El programa valida que:
 - El tamaño de la contraseña sea un número entero positivo.
 - La cantidad de contraseñas a generar sea como mínimo 1.
 - Se manejen errores usando bloques `try-except` para evitar fallos.
 
-### 4️⃣ Generación múltiple de contraseñas
+### Generación múltiple de contraseñas
 El usuario puede elegir cuántas contraseñas desea generar y el programa las mostrará numeradas en pantalla.
 
 ---
 
-## 🧠 Estructuras y Conceptos Utilizados
+## Estructuras y Conceptos Utilizados
 - Variables
 - Funciones
 - Bucles `for` y `while`
@@ -57,7 +57,7 @@ El usuario puede elegir cuántas contraseñas desea generar y el programa las mo
 
 ---
 
-## 🧑‍💻 Datos del Estudiante / Grupo
+## Datos del Estudiante / Grupo
 - **Asignatura:** Programación
 - **Lenguaje:** Python
 - **Estudiante:** *(Coloca aquí tu nombre)*
@@ -66,12 +66,12 @@ El usuario puede elegir cuántas contraseñas desea generar y el programa las mo
 
 ---
 
-## 📅 Fecha
+## Fecha
 - **Fecha de entrega:** *(Coloca la fecha actual o la que te pidan)*
 
 ---
 
-## ▶️ Ejecución del Programa
+## Ejecución del Programa
 Para ejecutar el programa, asegúrate de tener Python instalado y usa el siguiente comando:
 
 ```bash
